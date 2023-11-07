@@ -1,13 +1,13 @@
-name: Test-workflow
+name: Test workflow
 on: push
 jobs:
   test-job:
     runs-on: ubuntu-latest
     steps:
       - name: get code
-      - uses: actions/checkout@v4
+        uses: actions/checkout@v4
       - name: Install NodeJS
-      - uses: actions/setup-node@v3
+        uses: actions/setup-node@v3
         with:
           node-version: 16
       - name: Install dependencies
